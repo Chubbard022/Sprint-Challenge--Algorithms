@@ -29,3 +29,22 @@ c)  def bunnyEars(bunnies):
       return 2 + bunnyEars(bunnies-1)
 
 Exercise I part c has a runtime of O(n)
+
+
+
+## Exercise II
+  -  _n_ story building
+  -  eggs break on floor _f_ or higher
+  -  egg doesn't break below floor _f_
+ 
+
+<!-- First Pass--time complexity O(n^2)  -->
+
+egg_thrower_count(n_floors):
+    count = 0
+    for n_floor in n_floors:
+        while count < n_floor:
+            count + 1
+    return count
+
+<!-- Second Pass -->

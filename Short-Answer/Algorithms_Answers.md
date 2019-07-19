@@ -38,13 +38,18 @@ Exercise I part c has a runtime of O(n)
   -  egg doesn't break below floor _f_
  
 
-<!-- First Pass--time complexity O(n^2)  -->
+this recursive binary search helps identify which is the highest floor eggs can be dropped
+without them breaking. it has a runtime complexity of O(log n)
 
-egg_thrower_count(n_floors):
-    count = 0
-    for n_floor in n_floors:
-        while count < n_floor:
-            count + 1
-    return count
 
-<!-- Second Pass -->
+binary search through the _n_ floors
+    set variable middle to //2 _n_ floors
+        drop egg:
+            if egg breaks:
+                if egg breaks:
+                    go through bottom half and set middle to its middle most value:
+                else:
+                    go through top half and set middle to its middle most value:
+s
+
+
